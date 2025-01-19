@@ -60,3 +60,25 @@ git restore main.py
 ```
 git log
 ```
+
+### Criar uma nova branch
+```
+git branch nova_branch
+```
+
+### Mudar para a nova branch
+```
+git checkout nova_branch
+```
+
+### Merge entre branches
+Trazer para a branch main todas as alterações realizadas na nova_branch
+```
+git checkout main
+git merge nova_branch
+```
+
+### Deletar uma branch
+```
+git branch -d nova_branch
+```
