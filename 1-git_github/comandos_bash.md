@@ -82,3 +82,13 @@ git merge nova_branch
 ```
 git branch -d nova_branch
 ```
+
+### Deletar uma branch do repositório remoto
+```
+git push origin -delete nova_branch
+```
+
+### Criando uma Branch a Partir de um Commit Anterior
+```
+git checkout -b nova_branch hash_do_commit
+```
