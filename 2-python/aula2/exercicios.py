@@ -41,10 +41,45 @@ def retorna_quadrado():
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+"""
+def retornar_soma():
+    resultado = float(input("Digite o primeiro número: ")) + float(input("Digite o segundo número: "))
+    return print(resultado)
+"""
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+"""
+def retornar_media():
+    resultado = float(input("Digite o primeiro número: ")) + float(input("Digite o segundo número: "))
+    return print(resultado/2)
+"""
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+"""
+def retorna_potencia():
+    resultado = float(input("Digite o número base: ")) ** float(input("Digite o número da potência: "))
+    return print(resultado)
+"""
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+"""
+def conversao_temperatura():
+    celsius = float(input("Digite a temperatura em Celsius: "))
+    fahrenheit = (celsius * (9/5)) + 32
+    return print(fahrenheit)
+
+conversao_temperatura()
+"""
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+"""
+import math
+
+def raio_circulo():
+    raio = float(input("Digite o raio do círculo: "))
+    resultado = math.pi * raio ** 2
+    print(f"A área do círculo é de: {resultado}")
+"""
 
 # #### Strings (`str`)
 
