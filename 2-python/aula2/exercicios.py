@@ -1,10 +1,42 @@
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+"""
+def retornar_soma():
+    resultado = int(input("Digite o primeiro número: ")) + int(input("Digite o segundo número: "))
+    return print(resultado)
+"""
+
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+"""
+def resto_divisao():
+    numero = int(input("Digite o valor que deseja dividir por 5: "))
+    resultado = numero % 5
+    return print(resultado)
+"""
+
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+"""
+def multiplicador():
+    resultado = int(input("Digite o primeiro número que deseja multiplicar: ")) * int(input("Digite o segundo número que deseja multiplicar: "))
+    return print(resultado)
+"""
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+"""
+def divisao_inteira():
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    resultado = int(n1 // n2)
+    return print(f"A divisão inteira de {n1} por {n2} é: {resultado}")
+"""
+
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+"""
+def retorna_quadrado():
+    resultado = int(input("Digite o valor que deseja elevar ao quadrado: "))
+    return print(resultado ** 2)
+"""
 
 # #### Números de Ponto Flutuante (`float`)
 
