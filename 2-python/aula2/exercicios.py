@@ -68,7 +68,6 @@ def conversao_temperatura():
     fahrenheit = (celsius * (9/5)) + 32
     return print(fahrenheit)
 
-conversao_temperatura()
 """
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
@@ -125,15 +124,76 @@ concatenar()
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+"""
+def comparador():
+    operador1 = bool(input("Digite 1 (verdadeiro) ou 0  (falso): "))
+    operador2 = bool(input("Digite 1 (verdadeiro) ou 0  (falso): "))
+    return print(operador1 and operador2)
+"""
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+"""
+def comparador():
+    operador1 = bool(input("Digite 1 (verdadeiro) ou 0  (falso): "))
+    operador2 = bool(input("Digite 1 (verdadeiro) ou 0  (falso): "))
+    return print(operador1 or operador2)
+"""
+
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+"""
+def comparador():
+    operador1 = bool(input("Digite 1 (verdadeiro) ou 0  (falso): "))
+    return print(not operador1)
+"""
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+"""
+def comparador():
+    operador1 = float(input("Digite o primeiro valor a comparar: "))
+    operador2 = float(input("Digite o segundo valor a comparar: "))
+    return print(operador1 == operador2)
+"""
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+"""
+def comparador():
+    operador1 = float(input("Digite o primeiro valor a comparar: "))
+    operador2 = float(input("Digite o segundo valor a comparar: "))
+    return print(operador1 != operador2)
+"""
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+"""
+def conversao_temperatura():
+    while True:
+        try:
+            celsius = float(input("Digite a temperatura em Celsius: "))
+            fahrenheit = (celsius * (9/5)) + 32
+            return print(f"A temperatura em Fahrenheit é: {fahrenheit}")
+        except ValueError:
+            print("Erro: Digite apenas valor numéricos.")
+"""
+
 # 22: Verificador de Palíndromo
+"""
+def palindromo():
+    try:
+        while True:
+            texto = input("Digite o texto para identificar se é palíndromo: ")
+            
+            if not texto.isalpha():
+                raise ValueError("Entrada Inválida! Apenas textos são permitidos!")
+            
+            resultado = texto == texto[::-1]
+            return print(resultado)
+            break
+    except ValueError as e:
+        print(e)
+"""
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
