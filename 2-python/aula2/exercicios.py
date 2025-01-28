@@ -84,10 +84,43 @@ def raio_circulo():
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+"""
+def letra_maiuscula():
+    texto = input("Digite o texto: ").upper()
+    return print(texto)
+"""
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+"""
+def letra_minuscula():
+    texto = input("Digite o texto: ").lower()
+    return print(texto)
+"""
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+"""
+def limpar_texto():
+    texto = input("Digite o texto: ").strip()
+    return print(texto)
+"""
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+"""
+def data_nascimento():
+    texto = input("Digite a sua data de nascimento: ")
+    dia, mes, ano = texto.split("/")
+    return print(f"Dia: {dia}, Mês: {mes}, Ano: {ano}")
+"""
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+"""
+def concatenar():
+    texto1 = input("Digite o primeiro texto: ")
+    texto2 = input("Digite o segundo texto: ")
+    return print(texto1, texto2)
+
+concatenar()
+"""
 
 # #### Booleanos (`bool`)
 
