@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pandera (>=0.23.1,<0.24.0)",
-    "pandas (>=2.2.3,<3.0.0)"
+    "pandas (>=2.2.3,<3.0.0)",
+    "fastparquet (>=2024.11.0,<2025.0.0)"
 ]
 
 
