@@ -10,12 +10,12 @@ pyenv install 3.13.0
 
 # Definir a versão global do python
 ```
-pyenv global 3.12.1
+pyenv global 3.13.2
 ```
 
 # Definir a versão paga o projeto específico (ir primeiro na pasta do projeto)
 ```
-pyenv local 3.12.1
+pyenv local 3.13.2
 ```
 
 # Desinstalar todas as bibliotecas instaladas (funciona no bash)
