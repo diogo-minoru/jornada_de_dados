@@ -1,0 +1,31 @@
+[0m09:00:54.834115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002526277DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025260925310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252638F7D90>]}
+
+
+============================== 09:00:54.838283 | 64b80d2e-a8c1-4172-b532-f8523bf34729 ==============================
+[0m09:00:54.838283 [info ] [MainThread]: Running with dbt=1.9.3
+[0m09:00:54.839192 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:00:54.855788 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/diogo/.dbt')}
+[0m09:00:54.856383 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m09:27:16.587476 [debug] [MainThread]: Starter project path: C:\Users\diogo\OneDrive\Área de Trabalho\GitHub\jornada_de_dados\4-dbtcore\.venv\Lib\site-packages\dbt\include\starter_project
+[0m09:27:16.603065 [info ] [MainThread]: 
+Your new dbt project "northwind" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:27:16.603859 [info ] [MainThread]: Setting up your profile.
+[0m09:32:14.571678 [info ] [MainThread]: Profile northwind written to C:\Users\diogo\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:32:14.572805 [debug] [MainThread]: Command `dbt init` succeeded at 09:32:14.572675 after 1879.84 seconds
+[0m09:32:14.573186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025263B94640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002526397B2F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000252637C29C0>]}
+[0m09:32:14.573545 [debug] [MainThread]: Flushing usage events
+[0m09:32:15.390663 [debug] [MainThread]: An error was encountered while trying to flush usage events
