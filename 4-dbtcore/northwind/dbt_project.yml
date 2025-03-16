@@ -33,4 +33,11 @@ models:
   northwind:
     # Config indicated by + and applies to all files under models/example/
     raw:
-      materialized: view
+      +materialized: view
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    mart:
+      +schema: "gold"
+      +materialized: table
