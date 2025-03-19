@@ -5,7 +5,7 @@ with renamed as (
         unit_price,
         quantity,
         discount
-    from {{ref('raw_crm__order_details')}}
+    from {{ref('bronze_order_details')}}
 )
 
 select *

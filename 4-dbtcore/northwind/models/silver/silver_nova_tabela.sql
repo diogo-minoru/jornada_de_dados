@@ -7,7 +7,7 @@ with renamed as (
         parcelas,
         valor_parcela,
         taxa_juros
-    from {{ref('raw_crm__nova_tabela')}}
+    from {{ref('bronze_nova_tabela')}}
 )
 
 select *

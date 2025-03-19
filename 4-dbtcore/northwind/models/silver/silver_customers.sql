@@ -4,7 +4,7 @@ with customers as (
         company_name,
         country,
         city
-    from {{ref('raw_crm__customers')}}
+    from {{ref('bronze_customers')}}
 )
 
 select *

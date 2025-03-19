@@ -5,7 +5,7 @@
 
 with vendas as(
     select *
-    from {{ref('stg_crm__order_details')}}
+    from {{ref('silver_order_details')}}
 )
 
 select * from vendas
