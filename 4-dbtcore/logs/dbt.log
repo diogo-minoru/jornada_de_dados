@@ -194,3 +194,211 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m20:51:27.188027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001532CC73100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001532CC9A450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001532CA6A030>]}
 [0m20:51:27.188362 [debug] [MainThread]: Flushing usage events
 [0m20:51:27.753971 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:17:52.186372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3759A9A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F373B79310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F376AEBD90>]}
+
+
+============================== 21:17:52.189569 | f9bbd787-6435-46e7-8a5e-80bdf4d23aba ==============================
+[0m21:17:52.189569 [info ] [MainThread]: Running with dbt=1.9.3
+[0m21:17:52.190227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:17:52.201516 [info ] [MainThread]: dbt version: 1.9.3
+[0m21:17:52.202061 [info ] [MainThread]: python version: 3.13.2
+[0m21:17:52.202532 [info ] [MainThread]: python path: C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\python.exe
+[0m21:17:52.202944 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:17:52.252167 [info ] [MainThread]: Using profiles dir at C:\Users\diogo\.dbt
+[0m21:17:52.252730 [info ] [MainThread]: Using profiles.yml file at C:\Users\diogo\.dbt\profiles.yml
+[0m21:17:52.253189 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml
+[0m21:17:52.253998 [info ] [MainThread]: adapter type: postgres
+[0m21:17:52.254348 [info ] [MainThread]: adapter version: 1.9.0
+[0m21:17:52.254699 [info ] [MainThread]: Configuration:
+[0m21:17:52.255016 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:17:52.255329 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:17:52.255646 [info ] [MainThread]: Required dependencies:
+[0m21:17:52.255978 [debug] [MainThread]: Executing "git --help"
+[0m21:17:52.273717 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:17:52.274136 [debug] [MainThread]: STDERR: "b''"
+[0m21:17:52.274504 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:17:52.274931 [info ] [MainThread]: Connection:
+[0m21:17:52.275409 [info ] [MainThread]:   host: northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com
+[0m21:17:52.275852 [info ] [MainThread]:   port: 5432
+[0m21:17:52.276185 [info ] [MainThread]:   user: postgres
+[0m21:17:52.276501 [info ] [MainThread]:   database: northwind
+[0m21:17:52.276865 [info ] [MainThread]:   schema: public
+[0m21:17:52.277263 [info ] [MainThread]:   connect_timeout: 10
+[0m21:17:52.277608 [info ] [MainThread]:   role: None
+[0m21:17:52.277945 [info ] [MainThread]:   search_path: None
+[0m21:17:52.278295 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:17:52.278673 [info ] [MainThread]:   sslmode: None
+[0m21:17:52.279029 [info ] [MainThread]:   sslcert: None
+[0m21:17:52.279376 [info ] [MainThread]:   sslkey: None
+[0m21:17:52.279725 [info ] [MainThread]:   sslrootcert: None
+[0m21:17:52.280086 [info ] [MainThread]:   application_name: dbt
+[0m21:17:52.280441 [info ] [MainThread]:   retries: 1
+[0m21:17:52.280974 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:17:52.470140 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:17:52.520557 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:17:52.520909 [debug] [MainThread]: On debug: select 1 as id
+[0m21:17:52.521175 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:17:52.729536 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com" (15.229.195.28), port 5432 failed: FATAL:  database "northwind" does not exist
+
+[0m21:17:52.858058 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m21:17:52.858501 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m21:17:52.858788 [debug] [MainThread]: On debug: No close available on handle
+[0m21:17:52.859070 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:17:52.859582 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:17:52.860055 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml> not found
+
+[0m21:17:52.860528 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com" (15.229.195.28), port 5432 failed: FATAL:  database "northwind" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:17:52.861314 [debug] [MainThread]: Command `dbt debug` failed at 21:17:52.861218 after 0.82 seconds
+[0m21:17:52.861591 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:17:52.861870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F376D5B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F376D868D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F376B92580>]}
+[0m21:17:52.862224 [debug] [MainThread]: Flushing usage events
+[0m21:17:53.496475 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:18:31.672123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A25099A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A23255310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A261DBD90>]}
+
+
+============================== 21:18:31.675268 | e696dd5e-83e0-45b5-b31a-7c85836db2d3 ==============================
+[0m21:18:31.675268 [info ] [MainThread]: Running with dbt=1.9.3
+[0m21:18:31.675930 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:18:31.686764 [info ] [MainThread]: dbt version: 1.9.3
+[0m21:18:31.687222 [info ] [MainThread]: python version: 3.13.2
+[0m21:18:31.687757 [info ] [MainThread]: python path: C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\python.exe
+[0m21:18:31.688316 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:18:31.735903 [info ] [MainThread]: Using profiles dir at C:\Users\diogo\.dbt
+[0m21:18:31.736548 [info ] [MainThread]: Using profiles.yml file at C:\Users\diogo\.dbt\profiles.yml
+[0m21:18:31.737012 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml
+[0m21:18:31.737738 [info ] [MainThread]: adapter type: postgres
+[0m21:18:31.738151 [info ] [MainThread]: adapter version: 1.9.0
+[0m21:18:31.738534 [info ] [MainThread]: Configuration:
+[0m21:18:31.738916 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:18:31.739265 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:18:31.739587 [info ] [MainThread]: Required dependencies:
+[0m21:18:31.739932 [debug] [MainThread]: Executing "git --help"
+[0m21:18:31.756525 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:18:31.757142 [debug] [MainThread]: STDERR: "b''"
+[0m21:18:31.757657 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:18:31.758101 [info ] [MainThread]: Connection:
+[0m21:18:31.758493 [info ] [MainThread]:   host: northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com
+[0m21:18:31.758866 [info ] [MainThread]:   port: 5432
+[0m21:18:31.759216 [info ] [MainThread]:   user: postgres
+[0m21:18:31.759541 [info ] [MainThread]:   database: northwind
+[0m21:18:31.759861 [info ] [MainThread]:   schema: public
+[0m21:18:31.760186 [info ] [MainThread]:   connect_timeout: 10
+[0m21:18:31.760552 [info ] [MainThread]:   role: None
+[0m21:18:31.760901 [info ] [MainThread]:   search_path: None
+[0m21:18:31.761230 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:18:31.761589 [info ] [MainThread]:   sslmode: None
+[0m21:18:31.761925 [info ] [MainThread]:   sslcert: None
+[0m21:18:31.762337 [info ] [MainThread]:   sslkey: None
+[0m21:18:31.762743 [info ] [MainThread]:   sslrootcert: None
+[0m21:18:31.763070 [info ] [MainThread]:   application_name: dbt
+[0m21:18:31.763384 [info ] [MainThread]:   retries: 1
+[0m21:18:31.763866 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:18:31.941514 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:18:31.990560 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:18:31.990899 [debug] [MainThread]: On debug: select 1 as id
+[0m21:18:31.991147 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:18:32.168973 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com" (15.229.195.28), port 5432 failed: FATAL:  database "northwind" does not exist
+
+[0m21:18:32.296757 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m21:18:32.297189 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m21:18:32.297472 [debug] [MainThread]: On debug: No close available on handle
+[0m21:18:32.297735 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:18:32.298258 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:18:32.298765 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml> not found
+
+[0m21:18:32.299228 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com" (15.229.195.28), port 5432 failed: FATAL:  database "northwind" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:18:32.299967 [debug] [MainThread]: Command `dbt debug` failed at 21:18:32.299861 after 0.72 seconds
+[0m21:18:32.300255 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:18:32.300535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A2644B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A264768D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A26282580>]}
+[0m21:18:32.300906 [debug] [MainThread]: Flushing usage events
+[0m21:18:32.868628 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:22:55.285167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220457B1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022043945310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220468B7ED0>]}
+
+
+============================== 21:22:55.288432 | 1f50fbb5-80ff-4e65-b7b6-b457bb1f3f6f ==============================
+[0m21:22:55.288432 [info ] [MainThread]: Running with dbt=1.9.3
+[0m21:22:55.289097 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:22:55.299937 [info ] [MainThread]: dbt version: 1.9.3
+[0m21:22:55.300398 [info ] [MainThread]: python version: 3.13.2
+[0m21:22:55.300895 [info ] [MainThread]: python path: C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\python.exe
+[0m21:22:55.301359 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:22:55.348775 [info ] [MainThread]: Using profiles dir at C:\Users\diogo\.dbt
+[0m21:22:55.349373 [info ] [MainThread]: Using profiles.yml file at C:\Users\diogo\.dbt\profiles.yml
+[0m21:22:55.349805 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml
+[0m21:22:55.350548 [info ] [MainThread]: adapter type: postgres
+[0m21:22:55.350908 [info ] [MainThread]: adapter version: 1.9.0
+[0m21:22:55.351276 [info ] [MainThread]: Configuration:
+[0m21:22:55.351596 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:22:55.351912 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:22:55.352226 [info ] [MainThread]: Required dependencies:
+[0m21:22:55.352558 [debug] [MainThread]: Executing "git --help"
+[0m21:22:55.369692 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:22:55.370154 [debug] [MainThread]: STDERR: "b''"
+[0m21:22:55.370511 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:22:55.370936 [info ] [MainThread]: Connection:
+[0m21:22:55.371361 [info ] [MainThread]:   host: northwind.cta46sakyg3l.sa-east-1.rds.amazonaws.com
+[0m21:22:55.371759 [info ] [MainThread]:   port: 5432
+[0m21:22:55.372120 [info ] [MainThread]:   user: postgres
+[0m21:22:55.372430 [info ] [MainThread]:   database: postgres
+[0m21:22:55.372778 [info ] [MainThread]:   schema: public
+[0m21:22:55.373096 [info ] [MainThread]:   connect_timeout: 10
+[0m21:22:55.373410 [info ] [MainThread]:   role: None
+[0m21:22:55.373719 [info ] [MainThread]:   search_path: None
+[0m21:22:55.374027 [info ] [MainThread]:   keepalives_idle: 0
+[0m21:22:55.374330 [info ] [MainThread]:   sslmode: None
+[0m21:22:55.374689 [info ] [MainThread]:   sslcert: None
+[0m21:22:55.375024 [info ] [MainThread]:   sslkey: None
+[0m21:22:55.375331 [info ] [MainThread]:   sslrootcert: None
+[0m21:22:55.375652 [info ] [MainThread]:   application_name: dbt
+[0m21:22:55.375996 [info ] [MainThread]:   retries: 1
+[0m21:22:55.376527 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m21:22:55.559087 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m21:22:55.609052 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:22:55.609391 [debug] [MainThread]: On debug: select 1 as id
+[0m21:22:55.609640 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:22:55.880040 [debug] [MainThread]: SQL status: SELECT 1 in 0.270 seconds
+[0m21:22:55.881040 [debug] [MainThread]: On debug: Close
+[0m21:22:55.881486 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:22:55.882040 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:22:55.882475 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\diogo\Downloads\GitHub\jornada_de_dados\4-dbtcore\dbt_project.yml> not found
+
+[0m21:22:55.883135 [debug] [MainThread]: Command `dbt debug` failed at 21:22:55.883043 after 0.74 seconds
+[0m21:22:55.883411 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:22:55.883691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022046B43100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022046B6AC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002204696B350>]}
+[0m21:22:55.884015 [debug] [MainThread]: Flushing usage events
+[0m21:22:56.618211 [debug] [MainThread]: An error was encountered while trying to flush usage events
