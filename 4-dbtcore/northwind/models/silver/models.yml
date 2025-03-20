@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: silver_customers
+    description: "Tabela de clientes"
+    columns:
+      - name: customer_id
+        description: "chave primária do cliente"
+        tests:
+          - not_null
+          - unique
+      - name: company_name
+        description: "nome do cliente"
+        tests:
+          - not_null
+      - name: country
+        description: "país do cliente"
+        tests:
+          - not_null
+      - name: city
+        description: "cidade do cliente"
+        tests:
+          - not_null
+  - name: silver_order_details
+    description: "Tabela de detalhes do pedido"
+    columns:
+      - name: order_id
+        description: "chave primária do pedido"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_orders')
+              field: order_id
+      - name: product_id
+        description: "código do produto"
+        tests:
+          - not_null
+      - name: unit_price
+        description: "preço unitário do produto no pedido"
+        tests:
+          - not_null
+      - name: quantity
+        description: "quantidade do item no pedido"
+        tests:
+          - not_null
+      - name: discount
+        description: "desconto do item no pedido"
+  - name: silver_orders
+    description: "Tabela de detalhes do pedido"
+    columns:
+      - name: order_id
+        description: "chave primária do pedido"
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: "código do cliente que realizou o pedido"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_customers')
+              field: customer_id

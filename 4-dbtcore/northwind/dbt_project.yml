@@ -35,9 +35,15 @@ models:
     bronze:
       +schema: bronze
       +materialized: view
+      +docs:
+        node_color: "#9c5703"
     silver:
       +schema: silver
       +materialized: view
+      +docs:
+        node_color: "#d6d6d6"
     gold:
       +schema: gold
       +materialized: table
+      +docs:
+        node_color: "#f2cc0f"
