@@ -1,4 +1,10 @@
-with renamed as (
+with 
+    source as (
+    select *
+    from {{ref('bronze_nova_tabela')}}
+    ),
+
+    renamed as (
     select 
         id_transacao,
         id_cliente,
@@ -7,8 +13,8 @@ with renamed as (
         parcelas,
         valor_parcela,
         taxa_juros
-    from {{ref('bronze_nova_tabela')}}
-)
+    from source
+    )
 
 select *
 from renamed
