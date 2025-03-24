@@ -9,3 +9,32 @@
 [0m20:21:53.446949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D9DD0CFC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D9DD29A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028D9DAFE9C0>]}
 [0m20:21:53.447290 [debug] [MainThread]: Flushing usage events
 [0m20:21:54.185269 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:36:24.654801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD9BBAB380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD99BBD6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD9C8C9A90>]}
+
+
+============================== 20:36:24.658109 | 7ba0d5c0-6945-47e2-bd8e-b125145168f4 ==============================
+[0m20:36:24.658109 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:36:24.658760 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:36:29.255117 [debug] [MainThread]: Starter project path: C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\include\starter_project
+[0m20:36:29.277342 [info ] [MainThread]:
+Your new dbt project "datawarehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:36:29.277976 [info ] [MainThread]: Setting up your profile.
+[0m20:40:58.682849 [info ] [MainThread]: Profile datawarehouse written to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:40:58.683938 [debug] [MainThread]: Command `dbt init` succeeded at 20:40:58.683808 after 274.17 seconds
+[0m20:40:58.684337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDB7105350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD9CE15B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDB70AF9B0>]}
+[0m20:40:58.684726 [debug] [MainThread]: Flushing usage events
+[0m20:40:59.386638 [debug] [MainThread]: An error was encountered while trying to flush usage events
