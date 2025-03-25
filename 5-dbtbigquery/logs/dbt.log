@@ -798,3 +798,1303 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m19:03:08.548144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F1EB64770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F1ECE0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F1EB03F00>]}
 [0m19:03:08.548474 [debug] [MainThread]: Flushing usage events
 [0m19:03:09.112587 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:11:02.274032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C819F4B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C817F49590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81AC95950>]}
+
+
+============================== 19:11:02.277231 | b8ee9864-304a-41a5-86a3-cf5925fe0030 ==============================
+[0m19:11:02.277231 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:11:02.277888 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m19:11:03.021962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835604510>]}
+[0m19:11:03.069676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835490E20>]}
+[0m19:11:03.070252 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:11:03.400342 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m19:11:03.401259 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:11:03.401815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835456950>]}
+[0m19:11:05.278453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8357DDC70>]}
+[0m19:11:05.341421 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:11:05.345762 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:11:05.362735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835942EB0>]}
+[0m19:11:05.363172 [info ] [MainThread]: Found 2 models, 6 seeds, 4 data tests, 491 macros
+[0m19:11:05.363612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C83588CFC0>]}
+[0m19:11:05.365156 [info ] [MainThread]:
+[0m19:11:05.365615 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:11:05.366033 [info ] [MainThread]:
+[0m19:11:05.366537 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:11:05.370006 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m19:11:05.370398 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:11:06.188036 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_dataset_dbt_bigquery'
+[0m19:11:06.188440 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:11:06.832121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835B534D0>]}
+[0m19:11:06.832617 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:11:06.837594 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_customers
+[0m19:11:06.838130 [info ] [Thread-1 (]: 1 of 6 START seed file dataset_dbt_bigquery.raw_customers ...................... [RUN]
+[0m19:11:06.838732 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.datawarehouse.raw_customers'
+[0m19:11:06.839050 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_customers
+[0m19:11:06.839346 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_customers
+[0m19:11:06.918389 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:11:11.816512 [debug] [Thread-1 (]: On seed.datawarehouse.raw_customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_customers"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_customers` set OPTIONS()
+
+[0m19:11:12.212126 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:dc243304-4920-4a36-a8b8-34b229555653&page=queryresults
+[0m19:11:12.734677 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_customers"
+[0m19:11:12.755136 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835B16F10>]}
+[0m19:11:12.755739 [info ] [Thread-1 (]: 1 of 6 OK loaded seed file dataset_dbt_bigquery.raw_customers .................. [[32mINSERT 935[0m in 5.91s]
+[0m19:11:12.756626 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_customers
+[0m19:11:12.756977 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2023
+[0m19:11:12.757496 [info ] [Thread-1 (]: 2 of 6 START seed file dataset_dbt_bigquery.raw_orders_2023 .................... [RUN]
+[0m19:11:12.758027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_customers, now seed.datawarehouse.raw_orders_2023)
+[0m19:11:12.758342 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2023
+[0m19:11:12.758640 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2023
+[0m19:11:14.673594 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:11:21.969383 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2023: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2023"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_orders_2023` set OPTIONS()
+
+[0m19:11:22.356686 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:b8f7bc4f-4bcd-4810-8afb-a61378fd56b1&page=queryresults
+[0m19:11:22.848303 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2023"
+[0m19:11:22.851444 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835CBFED0>]}
+[0m19:11:22.851958 [info ] [Thread-1 (]: 2 of 6 OK loaded seed file dataset_dbt_bigquery.raw_orders_2023 ................ [[32mINSERT 61948[0m in 10.09s]
+[0m19:11:22.852719 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2023
+[0m19:11:22.853102 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2024
+[0m19:11:22.853587 [info ] [Thread-1 (]: 3 of 6 START seed file dataset_dbt_bigquery.raw_orders_2024 .................... [RUN]
+[0m19:11:22.854047 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2023, now seed.datawarehouse.raw_orders_2024)
+[0m19:11:22.854378 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2024
+[0m19:11:22.854673 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2024
+[0m19:11:23.729685 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:11:30.571340 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2024: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2024"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_orders_2024` set OPTIONS()
+
+[0m19:11:31.011801 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:afcf4b9b-b717-4079-9aa1-024869b46929&page=queryresults
+[0m19:11:31.485314 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2024"
+[0m19:11:31.497311 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C839496350>]}
+[0m19:11:31.497792 [info ] [Thread-1 (]: 3 of 6 OK loaded seed file dataset_dbt_bigquery.raw_orders_2024 ................ [[32mINSERT 31790[0m in 8.64s]
+[0m19:11:31.498526 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2024
+[0m19:11:31.498962 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_products
+[0m19:11:31.499445 [info ] [Thread-1 (]: 4 of 6 START seed file dataset_dbt_bigquery.raw_products ....................... [RUN]
+[0m19:11:31.499984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2024, now seed.datawarehouse.raw_products)
+[0m19:11:31.500300 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_products
+[0m19:11:31.500591 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_products
+[0m19:11:31.503499 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:11:37.179257 [debug] [Thread-1 (]: On seed.datawarehouse.raw_products: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_products"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_products` set OPTIONS()
+
+[0m19:11:37.536966 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:a7e43253-fa1b-4b17-9c2f-f0b751b02b5b&page=queryresults
+[0m19:11:37.994602 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_products"
+[0m19:11:37.997154 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835C17D90>]}
+[0m19:11:37.997588 [info ] [Thread-1 (]: 4 of 6 OK loaded seed file dataset_dbt_bigquery.raw_products ................... [[32mINSERT 10[0m in 6.50s]
+[0m19:11:37.998351 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_products
+[0m19:11:37.998752 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_stores
+[0m19:11:37.999337 [info ] [Thread-1 (]: 5 of 6 START seed file dataset_dbt_bigquery.raw_stores ......................... [RUN]
+[0m19:11:37.999924 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_products, now seed.datawarehouse.raw_stores)
+[0m19:11:38.000238 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_stores
+[0m19:11:38.000525 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_stores
+[0m19:11:38.003441 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:11:43.708939 [debug] [Thread-1 (]: On seed.datawarehouse.raw_stores: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_stores"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_stores` set OPTIONS()
+
+[0m19:11:44.070092 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:2fae6ff2-7261-4df9-82b0-3a5c87963b9f&page=queryresults
+[0m19:11:44.533319 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_stores"
+[0m19:11:44.536232 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8362CA270>]}
+[0m19:11:44.536676 [info ] [Thread-1 (]: 5 of 6 OK loaded seed file dataset_dbt_bigquery.raw_stores ..................... [[32mINSERT 6[0m in 6.54s]
+[0m19:11:44.537452 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_stores
+[0m19:11:44.537832 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_supplies
+[0m19:11:44.538268 [info ] [Thread-1 (]: 6 of 6 START seed file dataset_dbt_bigquery.raw_supplies ....................... [RUN]
+[0m19:11:44.538744 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_stores, now seed.datawarehouse.raw_supplies)
+[0m19:11:44.539115 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_supplies
+[0m19:11:44.539466 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_supplies
+[0m19:11:44.542903 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:11:49.505064 [debug] [Thread-1 (]: On seed.datawarehouse.raw_supplies: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_supplies"} */
+
+    alter table `dbtbigquery-454400`.`dataset_dbt_bigquery`.`raw_supplies` set OPTIONS()
+
+[0m19:11:49.890931 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:428a6e99-0b12-48f6-8933-44a597cd092f&page=queryresults
+[0m19:11:50.337949 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_supplies"
+[0m19:11:50.340618 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b8ee9864-304a-41a5-86a3-cf5925fe0030', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8362CA270>]}
+[0m19:11:50.341053 [info ] [Thread-1 (]: 6 of 6 OK loaded seed file dataset_dbt_bigquery.raw_supplies ................... [[32mINSERT 65[0m in 5.80s]
+[0m19:11:50.341796 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_supplies
+[0m19:11:50.342915 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:11:50.344237 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:11:50.344505 [debug] [MainThread]: Connection 'list_dbtbigquery-454400' was properly closed.
+[0m19:11:50.344742 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_dataset_dbt_bigquery' was properly closed.
+[0m19:11:50.344972 [debug] [MainThread]: Connection 'seed.datawarehouse.raw_supplies' was properly closed.
+[0m19:11:50.345237 [info ] [MainThread]:
+[0m19:11:50.345665 [info ] [MainThread]: Finished running 6 seeds in 0 hours 0 minutes and 44.98 seconds (44.98s).
+[0m19:11:50.346923 [debug] [MainThread]: Command end result
+[0m19:11:50.365093 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:11:50.367353 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:11:50.372440 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m19:11:50.372751 [info ] [MainThread]:
+[0m19:11:50.373210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:11:50.373797 [info ] [MainThread]:
+[0m19:11:50.374281 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m19:11:50.374978 [debug] [MainThread]: Command `dbt seed` succeeded at 19:11:50.374880 after 48.25 seconds
+[0m19:11:50.375296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81ACA8350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C835925550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C83948AFF0>]}
+[0m19:11:50.375603 [debug] [MainThread]: Flushing usage events
+[0m19:11:51.227509 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:23:31.024084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188F93CB380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188F73CD590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188FA105950>]}
+
+
+============================== 19:23:31.027389 | f988e224-f487-4a5b-abef-22d7511438ad ==============================
+[0m19:23:31.027389 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:23:31.028059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:23:31.801706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894B84510>]}
+[0m19:23:31.850994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894A10E20>]}
+[0m19:23:31.851611 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:23:32.159272 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m19:23:32.255590 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:23:32.256504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188949DB550>]}
+[0m19:23:33.102090 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.datawarehouse.mart
+- models.datawarehouse.staging
+[0m19:23:33.116912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894D5C5F0>]}
+[0m19:23:33.162067 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:23:33.165121 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:23:33.180962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188951A0210>]}
+[0m19:23:33.181403 [info ] [MainThread]: Found 6 seeds, 7 sources, 492 macros
+[0m19:23:33.181880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894D98600>]}
+[0m19:23:33.183421 [info ] [MainThread]:
+[0m19:23:33.183894 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:23:33.184366 [info ] [MainThread]:
+[0m19:23:33.184874 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:23:33.188266 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m19:23:33.188649 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:33.871291 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400, now create_dbtbigquery-454400_None)
+[0m19:23:33.871814 [debug] [ThreadPool]: Creating schema "database: "dbtbigquery-454400"
+schema: "None"
+"
+[0m19:23:33.878738 [debug] [ThreadPool]: On create_dbtbigquery-454400_None: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "connection_name": "create_dbtbigquery-454400_None"} */
+create schema if not exists `dbtbigquery-454400`.`None`
+
+[0m19:23:33.879055 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:23:34.531951 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:fb3f8b93-154a-4e4d-b2b6-4269df6c48a8&page=queryresults
+[0m19:23:35.546954 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_None'
+[0m19:23:35.547370 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:36.174362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894F2B890>]}
+[0m19:23:36.174827 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:23:36.179050 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_customers
+[0m19:23:36.179492 [info ] [Thread-1 (]: 1 of 6 START seed file None.raw_customers ...................................... [RUN]
+[0m19:23:36.180152 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.datawarehouse.raw_customers'
+[0m19:23:36.180556 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_customers
+[0m19:23:36.180947 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_customers
+[0m19:23:36.204973 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:23:41.397563 [debug] [Thread-1 (]: On seed.datawarehouse.raw_customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_customers"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_customers` set OPTIONS()
+
+[0m19:23:41.786797 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:4e5bb7c6-24e3-4bd6-876c-dbce5898593e&page=queryresults
+[0m19:23:42.291391 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_customers"
+[0m19:23:42.307426 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001889500BA10>]}
+[0m19:23:42.307931 [info ] [Thread-1 (]: 1 of 6 OK loaded seed file None.raw_customers .................................. [[32mINSERT 935[0m in 6.13s]
+[0m19:23:42.308816 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_customers
+[0m19:23:42.309214 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2023
+[0m19:23:42.309722 [info ] [Thread-1 (]: 2 of 6 START seed file None.raw_orders_2023 .................................... [RUN]
+[0m19:23:42.310322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_customers, now seed.datawarehouse.raw_orders_2023)
+[0m19:23:42.310746 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2023
+[0m19:23:42.311132 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2023
+[0m19:23:44.187445 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:23:51.537939 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2023: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2023"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_orders_2023` set OPTIONS()
+
+[0m19:23:51.924855 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:ad07d3ad-317b-4c04-a155-f5fdd5d9cf41&page=queryresults
+[0m19:23:52.397398 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2023"
+[0m19:23:52.399946 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894F859F0>]}
+[0m19:23:52.400408 [info ] [Thread-1 (]: 2 of 6 OK loaded seed file None.raw_orders_2023 ................................ [[32mINSERT 61948[0m in 10.09s]
+[0m19:23:52.401213 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2023
+[0m19:23:52.401628 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2024
+[0m19:23:52.402111 [info ] [Thread-1 (]: 3 of 6 START seed file None.raw_orders_2024 .................................... [RUN]
+[0m19:23:52.402634 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2023, now seed.datawarehouse.raw_orders_2024)
+[0m19:23:52.402949 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2024
+[0m19:23:52.403246 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2024
+[0m19:23:53.261816 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:23:59.419377 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2024: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2024"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_orders_2024` set OPTIONS()
+
+[0m19:23:59.807595 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:ed50788a-0730-4627-ae2b-d2111c556ef8&page=queryresults
+[0m19:24:00.284816 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2024"
+[0m19:24:00.287736 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188957D6450>]}
+[0m19:24:00.288169 [info ] [Thread-1 (]: 3 of 6 OK loaded seed file None.raw_orders_2024 ................................ [[32mINSERT 31790[0m in 7.89s]
+[0m19:24:00.288999 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2024
+[0m19:24:00.289385 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_products
+[0m19:24:00.289849 [info ] [Thread-1 (]: 4 of 6 START seed file None.raw_products ....................................... [RUN]
+[0m19:24:00.290436 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2024, now seed.datawarehouse.raw_products)
+[0m19:24:00.290828 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_products
+[0m19:24:00.291193 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_products
+[0m19:24:00.293789 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:24:05.581010 [debug] [Thread-1 (]: On seed.datawarehouse.raw_products: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_products"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_products` set OPTIONS()
+
+[0m19:24:05.954842 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:e028b613-419a-4e57-b6b9-b2de174b7b88&page=queryresults
+[0m19:24:06.458971 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_products"
+[0m19:24:06.461345 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018894B200C0>]}
+[0m19:24:06.461788 [info ] [Thread-1 (]: 4 of 6 OK loaded seed file None.raw_products ................................... [[32mINSERT 10[0m in 6.17s]
+[0m19:24:06.462485 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_products
+[0m19:24:06.462853 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_stores
+[0m19:24:06.463300 [info ] [Thread-1 (]: 5 of 6 START seed file None.raw_stores ......................................... [RUN]
+[0m19:24:06.463842 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_products, now seed.datawarehouse.raw_stores)
+[0m19:24:06.464233 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_stores
+[0m19:24:06.464603 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_stores
+[0m19:24:06.467212 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:24:11.108640 [debug] [Thread-1 (]: On seed.datawarehouse.raw_stores: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_stores"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_stores` set OPTIONS()
+
+[0m19:24:11.497153 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:948fdf8a-1e8a-4f98-8f51-10e152a0d6b7&page=queryresults
+[0m19:24:11.939706 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_stores"
+[0m19:24:11.942290 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001889BEF6570>]}
+[0m19:24:11.942791 [info ] [Thread-1 (]: 5 of 6 OK loaded seed file None.raw_stores ..................................... [[32mINSERT 6[0m in 5.48s]
+[0m19:24:11.943449 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_stores
+[0m19:24:11.943819 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_supplies
+[0m19:24:11.944272 [info ] [Thread-1 (]: 6 of 6 START seed file None.raw_supplies ....................................... [RUN]
+[0m19:24:11.944753 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_stores, now seed.datawarehouse.raw_supplies)
+[0m19:24:11.945061 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_supplies
+[0m19:24:11.945354 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_supplies
+[0m19:24:11.948760 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:24:16.787166 [debug] [Thread-1 (]: On seed.datawarehouse.raw_supplies: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_supplies"} */
+
+    alter table `dbtbigquery-454400`.`None`.`raw_supplies` set OPTIONS()
+
+[0m19:24:17.157366 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:0975d5ba-f73d-44c9-8bd8-282353dc08ce&page=queryresults
+[0m19:24:17.604594 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_supplies"
+[0m19:24:17.607232 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f988e224-f487-4a5b-abef-22d7511438ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001889BEF6810>]}
+[0m19:24:17.607736 [info ] [Thread-1 (]: 6 of 6 OK loaded seed file None.raw_supplies ................................... [[32mINSERT 65[0m in 5.66s]
+[0m19:24:17.608577 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_supplies
+[0m19:24:17.609708 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:24:17.611103 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:24:17.611374 [debug] [MainThread]: Connection 'create_dbtbigquery-454400_None' was properly closed.
+[0m19:24:17.611611 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_None' was properly closed.
+[0m19:24:17.611876 [debug] [MainThread]: Connection 'seed.datawarehouse.raw_supplies' was properly closed.
+[0m19:24:17.612147 [info ] [MainThread]:
+[0m19:24:17.612618 [info ] [MainThread]: Finished running 6 seeds in 0 hours 0 minutes and 44.43 seconds (44.43s).
+[0m19:24:17.614521 [debug] [MainThread]: Command end result
+[0m19:24:17.636056 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:24:17.637872 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:24:17.644841 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m19:24:17.645268 [info ] [MainThread]:
+[0m19:24:17.645786 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:24:17.646229 [info ] [MainThread]:
+[0m19:24:17.646703 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m19:24:17.647603 [debug] [MainThread]: Command `dbt seed` succeeded at 19:24:17.647485 after 46.77 seconds
+[0m19:24:17.647986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188949FD010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188FA0E33B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001889BEF51F0>]}
+[0m19:24:17.648346 [debug] [MainThread]: Flushing usage events
+[0m19:24:18.442538 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:25:57.019056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002196586B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021963869590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219665A5950>]}
+
+
+============================== 19:25:57.022354 | 21b801f2-6508-4a02-b9cb-a2159d524281 ==============================
+[0m19:25:57.022354 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:25:57.023035 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m19:25:57.763731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002197FF44510>]}
+[0m19:25:57.811731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002197FDD0E20>]}
+[0m19:25:57.812323 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:25:58.111561 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m19:25:58.177541 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:25:58.178434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002197FD97150>]}
+[0m19:25:58.998334 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.datawarehouse.staging
+- models.datawarehouse.mart
+[0m19:25:59.008222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002190114D130>]}
+[0m19:25:59.054955 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:25:59.058162 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:25:59.073448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219013D0050>]}
+[0m19:25:59.073977 [info ] [MainThread]: Found 6 seeds, 7 sources, 492 macros
+[0m19:25:59.074608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219012557E0>]}
+[0m19:25:59.076319 [info ] [MainThread]:
+[0m19:25:59.076775 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:25:59.077182 [info ] [MainThread]:
+[0m19:25:59.077758 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:25:59.081236 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m19:25:59.081672 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:25:59.600982 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400, now create_dbtbigquery-454400_raw)
+[0m19:25:59.601561 [debug] [ThreadPool]: Creating schema "database: "dbtbigquery-454400"
+schema: "raw"
+"
+[0m19:25:59.608558 [debug] [ThreadPool]: On create_dbtbigquery-454400_raw: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "connection_name": "create_dbtbigquery-454400_raw"} */
+create schema if not exists `dbtbigquery-454400`.`raw`
+
+[0m19:25:59.608868 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:26:00.264859 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:85d538df-bf8f-42bf-bc00-535f138b1c30&page=queryresults
+[0m19:26:01.246185 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_raw'
+[0m19:26:01.246576 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:26:01.791345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219013B77D0>]}
+[0m19:26:01.791928 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:26:01.795640 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_customers
+[0m19:26:01.796108 [info ] [Thread-1 (]: 1 of 6 START seed file raw.raw_customers ....................................... [RUN]
+[0m19:26:01.796747 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.datawarehouse.raw_customers'
+[0m19:26:01.797109 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_customers
+[0m19:26:01.797403 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_customers
+[0m19:26:01.821056 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:26:09.118859 [debug] [Thread-1 (]: On seed.datawarehouse.raw_customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_customers"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_customers` set OPTIONS()
+
+[0m19:26:09.480738 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:3d728684-ee7a-465a-875d-dba0b80933e9&page=queryresults
+[0m19:26:09.980583 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_customers"
+[0m19:26:09.996206 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219013E7AC0>]}
+[0m19:26:09.996682 [info ] [Thread-1 (]: 1 of 6 OK loaded seed file raw.raw_customers ................................... [[32mINSERT 935[0m in 8.20s]
+[0m19:26:09.997573 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_customers
+[0m19:26:09.997960 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2023
+[0m19:26:09.998449 [info ] [Thread-1 (]: 2 of 6 START seed file raw.raw_orders_2023 ..................................... [RUN]
+[0m19:26:09.999038 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_customers, now seed.datawarehouse.raw_orders_2023)
+[0m19:26:09.999436 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2023
+[0m19:26:09.999767 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2023
+[0m19:26:11.873123 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:26:19.777339 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2023: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2023"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_orders_2023` set OPTIONS()
+
+[0m19:26:20.099264 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:6d5b2b76-bc79-44e0-bb1b-f36190dedd13&page=queryresults
+[0m19:26:20.579148 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2023"
+[0m19:26:20.581645 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002190134F4D0>]}
+[0m19:26:20.582098 [info ] [Thread-1 (]: 2 of 6 OK loaded seed file raw.raw_orders_2023 ................................. [[32mINSERT 61948[0m in 10.58s]
+[0m19:26:20.582768 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2023
+[0m19:26:20.583119 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_orders_2024
+[0m19:26:20.583592 [info ] [Thread-1 (]: 3 of 6 START seed file raw.raw_orders_2024 ..................................... [RUN]
+[0m19:26:20.584063 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2023, now seed.datawarehouse.raw_orders_2024)
+[0m19:26:20.584420 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_orders_2024
+[0m19:26:20.584795 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_orders_2024
+[0m19:26:21.425587 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:26:28.212822 [debug] [Thread-1 (]: On seed.datawarehouse.raw_orders_2024: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_orders_2024"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_orders_2024` set OPTIONS()
+
+[0m19:26:28.552055 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:69b2cd2b-851d-4c5f-bc1b-3d580676277c&page=queryresults
+[0m19:26:28.995992 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_orders_2024"
+[0m19:26:28.998416 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021901BBDFD0>]}
+[0m19:26:28.998839 [info ] [Thread-1 (]: 3 of 6 OK loaded seed file raw.raw_orders_2024 ................................. [[32mINSERT 31790[0m in 8.41s]
+[0m19:26:28.999636 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_orders_2024
+[0m19:26:29.000068 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_products
+[0m19:26:29.000534 [info ] [Thread-1 (]: 4 of 6 START seed file raw.raw_products ........................................ [RUN]
+[0m19:26:29.001064 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_orders_2024, now seed.datawarehouse.raw_products)
+[0m19:26:29.001455 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_products
+[0m19:26:29.001816 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_products
+[0m19:26:29.004366 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:26:33.796529 [debug] [Thread-1 (]: On seed.datawarehouse.raw_products: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_products"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_products` set OPTIONS()
+
+[0m19:26:34.176811 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:942a0bdd-60fe-4cf7-b1f5-a3a66e5c5f98&page=queryresults
+[0m19:26:34.641275 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_products"
+[0m19:26:34.643657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002190141E7B0>]}
+[0m19:26:34.644104 [info ] [Thread-1 (]: 4 of 6 OK loaded seed file raw.raw_products .................................... [[32mINSERT 10[0m in 5.64s]
+[0m19:26:34.644870 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_products
+[0m19:26:34.645276 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_stores
+[0m19:26:34.645730 [info ] [Thread-1 (]: 5 of 6 START seed file raw.raw_stores .......................................... [RUN]
+[0m19:26:34.646255 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_products, now seed.datawarehouse.raw_stores)
+[0m19:26:34.646629 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_stores
+[0m19:26:34.646982 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_stores
+[0m19:26:34.649638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:26:39.409071 [debug] [Thread-1 (]: On seed.datawarehouse.raw_stores: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_stores"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_stores` set OPTIONS()
+
+[0m19:26:39.777435 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:57a48b36-e1d2-498e-91ae-028bcc5d2c5f&page=queryresults
+[0m19:26:40.230352 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_stores"
+[0m19:26:40.232661 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021901C6C050>]}
+[0m19:26:40.233105 [info ] [Thread-1 (]: 5 of 6 OK loaded seed file raw.raw_stores ...................................... [[32mINSERT 6[0m in 5.59s]
+[0m19:26:40.233885 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_stores
+[0m19:26:40.234323 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_supplies
+[0m19:26:40.234840 [info ] [Thread-1 (]: 6 of 6 START seed file raw.raw_supplies ........................................ [RUN]
+[0m19:26:40.235366 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.datawarehouse.raw_stores, now seed.datawarehouse.raw_supplies)
+[0m19:26:40.235726 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_supplies
+[0m19:26:40.236083 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_supplies
+[0m19:26:40.239503 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:26:45.490364 [debug] [Thread-1 (]: On seed.datawarehouse.raw_supplies: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_supplies"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_supplies` set OPTIONS()
+
+[0m19:26:45.841884 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:bf275a63-5e4d-4b4e-9617-c3ed293b34a6&page=queryresults
+[0m19:26:46.365450 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_supplies"
+[0m19:26:46.367835 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '21b801f2-6508-4a02-b9cb-a2159d524281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021901C6C050>]}
+[0m19:26:46.368258 [info ] [Thread-1 (]: 6 of 6 OK loaded seed file raw.raw_supplies .................................... [[32mINSERT 65[0m in 6.13s]
+[0m19:26:46.368983 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_supplies
+[0m19:26:46.370252 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:26:46.371539 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:26:46.371808 [debug] [MainThread]: Connection 'create_dbtbigquery-454400_raw' was properly closed.
+[0m19:26:46.372043 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_raw' was properly closed.
+[0m19:26:46.372266 [debug] [MainThread]: Connection 'seed.datawarehouse.raw_supplies' was properly closed.
+[0m19:26:46.372602 [info ] [MainThread]:
+[0m19:26:46.373031 [info ] [MainThread]: Finished running 6 seeds in 0 hours 0 minutes and 47.29 seconds (47.29s).
+[0m19:26:46.374479 [debug] [MainThread]: Command end result
+[0m19:26:46.391665 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m19:26:46.393606 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m19:26:46.398797 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m19:26:46.399167 [info ] [MainThread]:
+[0m19:26:46.399709 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:26:46.400120 [info ] [MainThread]:
+[0m19:26:46.400530 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m19:26:46.401224 [debug] [MainThread]: Command `dbt seed` succeeded at 19:26:46.401127 after 49.53 seconds
+[0m19:26:46.401537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021966922690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021904EAFA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021904EAD2B0>]}
+[0m19:26:46.401849 [debug] [MainThread]: Flushing usage events
+[0m19:26:47.194737 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:46:14.115104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002073F62B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002073D679590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020740365950>]}
+
+
+============================== 19:46:14.118728 | c05bc5e7-66c8-4029-b204-8e5830d6cc34 ==============================
+[0m19:46:14.118728 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:46:14.119410 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:46:14.218740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c05bc5e7-66c8-4029-b204-8e5830d6cc34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002073FCBF230>]}
+[0m19:46:14.239599 [debug] [MainThread]: Set downloads directory='C:\Users\diogo\AppData\Local\Temp\dbt-downloads-xfesrizv'
+[0m19:46:14.240162 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:46:14.668275 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:46:14.668966 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:46:14.717716 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:46:14.722523 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m19:46:14.800322 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m19:46:14.801109 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_date` package is deprecated in favor of
+`godatadriven/dbt_date`. Please update your `packages.yml` configuration to use
+`godatadriven/dbt_date` instead.
+[0m19:46:14.801756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c05bc5e7-66c8-4029-b204-8e5830d6cc34', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020740976AD0>]}
+[0m19:46:14.809491 [info ] [MainThread]: Updating lock file in file path: C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery/package-lock.yml
+[0m19:46:14.818938 [debug] [MainThread]: Set downloads directory='C:\Users\diogo\AppData\Local\Temp\dbt-downloads-fcvzus52'
+[0m19:46:14.822669 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:46:15.248852 [info ] [MainThread]: Installed from version 1.1.1
+[0m19:46:15.249432 [info ] [MainThread]: Updated version available: 1.3.0
+[0m19:46:15.249935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c05bc5e7-66c8-4029-b204-8e5830d6cc34', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207409D9650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207409D9050>]}
+[0m19:46:15.250270 [info ] [MainThread]: Installing calogica/dbt_date
+[0m19:46:15.494017 [info ] [MainThread]: Installed from version 0.10.0
+[0m19:46:15.494597 [info ] [MainThread]: Updated version available: 0.10.1
+[0m19:46:15.495038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c05bc5e7-66c8-4029-b204-8e5830d6cc34', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002074020ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207408E1D30>]}
+[0m19:46:15.495373 [info ] [MainThread]:
+[0m19:46:15.495741 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_date']
+Update your versions in packages.yml, then run dbt deps
+[0m19:46:15.497377 [debug] [MainThread]: Command `dbt deps` succeeded at 19:46:15.497264 after 1.55 seconds
+[0m19:46:15.497692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020741D62B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207405FFDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020740862ED0>]}
+[0m19:46:15.498009 [debug] [MainThread]: Flushing usage events
+[0m19:46:16.151407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:13:08.134804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF2262B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF2062D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF23365950>]}
+
+
+============================== 20:13:08.138538 | 45dd5c95-18c6-430c-b974-57f518d3bb7f ==============================
+[0m20:13:08.138538 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:13:08.139196 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:13:10.464430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF22CC69E0>]}
+[0m20:13:10.515726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3DBA0E20>]}
+[0m20:13:10.516334 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:13:11.020152 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:13:11.086039 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m20:13:11.086847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3DB66950>]}
+[0m20:13:13.723962 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.datawarehouse.mart
+[0m20:13:13.732868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3DF433E0>]}
+[0m20:13:13.802252 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:13:13.815097 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:13:13.836269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E3A5470>]}
+[0m20:13:13.836724 [info ] [MainThread]: Found 10 models, 6 seeds, 7 sources, 738 macros
+[0m20:13:13.837188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E24AF70>]}
+[0m20:13:13.839067 [info ] [MainThread]:
+[0m20:13:13.839532 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:13:13.839929 [info ] [MainThread]:
+[0m20:13:13.840417 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:13:13.844036 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m20:13:13.844459 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:13:14.669002 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400, now create_dbtbigquery-454400_staging)
+[0m20:13:14.669506 [debug] [ThreadPool]: Creating schema "database: "dbtbigquery-454400"
+schema: "staging"
+"
+[0m20:13:14.676828 [debug] [ThreadPool]: On create_dbtbigquery-454400_staging: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "connection_name": "create_dbtbigquery-454400_staging"} */
+create schema if not exists `dbtbigquery-454400`.`staging`
+
+[0m20:13:14.677213 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:15.390861 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:6d30a579-95d2-4558-8c7f-529873079907&page=queryresults
+[0m20:13:17.808710 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_raw'
+[0m20:13:17.809109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:13:18.351220 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400_raw, now list_dbtbigquery-454400_staging)
+[0m20:13:18.352450 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:13:18.952015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E2AF290>]}
+[0m20:13:18.952483 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:13:18.956387 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_customers
+[0m20:13:18.956881 [info ] [Thread-1 (]: 1 of 10 START sql view model staging.stg_customers ............................. [RUN]
+[0m20:13:18.957617 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.datawarehouse.stg_customers'
+[0m20:13:18.958061 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_customers
+[0m20:13:18.963800 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_customers"
+[0m20:13:18.965509 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_customers
+[0m20:13:18.986819 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_customers"
+[0m20:13:18.988196 [debug] [Thread-1 (]: On model.datawarehouse.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_customers"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_customers`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_customers`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as customer_id,
+
+        ---------- text
+        name as customer_name
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:18.988596 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:13:19.819694 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:5243529c-fd96-414c-b5a3-eaa6ddc87b7f&page=queryresults
+[0m20:13:20.323253 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E38E830>]}
+[0m20:13:20.323842 [info ] [Thread-1 (]: 1 of 10 OK created sql view model staging.stg_customers ........................ [[32mCREATE VIEW (0 processed)[0m in 1.36s]
+[0m20:13:20.324649 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_customers
+[0m20:13:20.325070 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_locations
+[0m20:13:20.325574 [info ] [Thread-1 (]: 2 of 10 START sql view model staging.stg_locations ............................. [RUN]
+[0m20:13:20.326097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_customers, now model.datawarehouse.stg_locations)
+[0m20:13:20.326429 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_locations
+[0m20:13:20.329055 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_locations"
+[0m20:13:20.330041 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_locations
+[0m20:13:20.332185 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_locations"
+[0m20:13:20.333026 [debug] [Thread-1 (]: On model.datawarehouse.stg_locations: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_locations"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_locations`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_stores`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as location_id,
+
+        ---------- text
+        name as location_name,
+
+        ---------- numerics
+        tax_rate,
+
+        ---------- timestamps
+        -- Substituição manual do dbt.date_trunc
+        DATE_TRUNC(opened_at, day) as opened_date
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:20.333402 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:21.081869 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:5c22f2e4-33fc-4e2f-bc9d-924d3ffbaa67&page=queryresults
+[0m20:13:21.585628 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EBE3BB0>]}
+[0m20:13:21.586174 [info ] [Thread-1 (]: 2 of 10 OK created sql view model staging.stg_locations ........................ [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m20:13:21.586980 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_locations
+[0m20:13:21.587374 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_locations_macro
+[0m20:13:21.587835 [info ] [Thread-1 (]: 3 of 10 START sql view model staging.stg_locations_macro ....................... [RUN]
+[0m20:13:21.588323 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_locations, now model.datawarehouse.stg_locations_macro)
+[0m20:13:21.588696 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_locations_macro
+[0m20:13:21.593380 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_locations_macro"
+[0m20:13:21.603687 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_locations_macro
+[0m20:13:21.605880 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_locations_macro"
+[0m20:13:21.606881 [debug] [Thread-1 (]: On model.datawarehouse.stg_locations_macro: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_locations_macro"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_locations_macro`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_stores`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as location_id,
+
+        ---------- text
+        name as location_name,
+
+        ---------- numerics
+        tax_rate,
+
+        ---------- timestamps
+        timestamp_trunc(
+        cast(opened_at as timestamp),
+        day
+    ) as opened_date
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:21.607250 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:22.386544 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:8bde20a9-c2b4-424a-9efc-7dc3d93961f0&page=queryresults
+[0m20:13:22.867743 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E5228D0>]}
+[0m20:13:22.868338 [info ] [Thread-1 (]: 3 of 10 OK created sql view model staging.stg_locations_macro .................. [[32mCREATE VIEW (0 processed)[0m in 1.28s]
+[0m20:13:22.869025 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_locations_macro
+[0m20:13:22.869367 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_order_items
+[0m20:13:22.869797 [info ] [Thread-1 (]: 4 of 10 START sql view model staging.stg_order_items ........................... [RUN]
+[0m20:13:22.870290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_locations_macro, now model.datawarehouse.stg_order_items)
+[0m20:13:22.870639 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_order_items
+[0m20:13:22.873138 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_order_items"
+[0m20:13:22.874093 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_order_items
+[0m20:13:22.875936 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_order_items"
+[0m20:13:22.876743 [debug] [Thread-1 (]: On model.datawarehouse.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_order_items"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_order_items`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_items`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as order_item_id,
+        order_id,
+        sku as product_id
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:22.877107 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:23.527285 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:493b311b-a96e-47db-878e-c83931346105&page=queryresults
+[0m20:13:23.527827 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:493b311b-a96e-47db-878e-c83931346105&page=queryresults
+[0m20:13:23.634838 [debug] [Thread-1 (]: Database Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Not found: Table dbtbigquery-454400:raw.raw_items was not found in location US
+  compiled code at target\run\datawarehouse\models\staging\stg_order_items.sql
+[0m20:13:23.635342 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EAC3690>]}
+[0m20:13:23.635846 [error] [Thread-1 (]: 4 of 10 ERROR creating sql view model staging.stg_order_items .................. [[31mERROR[0m in 0.77s]
+[0m20:13:23.636613 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_order_items
+[0m20:13:23.637020 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_orders
+[0m20:13:23.637541 [debug] [Thread-4 (]: Marking all children of 'model.datawarehouse.stg_order_items' to be skipped because of status 'error'.  Reason: Database Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Not found: Table dbtbigquery-454400:raw.raw_items was not found in location US
+  compiled code at target\run\datawarehouse\models\staging\stg_order_items.sql.
+[0m20:13:23.637964 [info ] [Thread-1 (]: 5 of 10 START sql view model staging.stg_orders ................................ [RUN]
+[0m20:13:23.638935 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_order_items, now model.datawarehouse.stg_orders)
+[0m20:13:23.639240 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_orders
+[0m20:13:23.641654 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_orders"
+[0m20:13:23.642516 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_orders
+[0m20:13:23.644674 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_orders"
+[0m20:13:23.645454 [debug] [Thread-1 (]: On model.datawarehouse.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_orders"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_orders`
+  OPTIONS()
+  as -- models/staging/stg_orders.sql
+
+with
+
+source_2023 as (
+    select * from `dbtbigquery-454400`.`raw`.`raw_orders_2023`
+),
+
+source_2024 as (
+    select * from `dbtbigquery-454400`.`raw`.`raw_orders_2024`
+),
+
+combined_sources as (
+    select * from source_2023
+    union all
+    select * from source_2024
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as order_id,
+        store_id as location_id,
+        customer as customer_id,
+
+        ---------- numerics
+        subtotal as subtotal_cents,
+        tax_paid as tax_paid_cents,
+        order_total as order_total_cents,
+        -- Substituição manual do cents_to_dollars
+        round(cast((subtotal / 100) as numeric), 2) as subtotal,
+        -- Substituição manual do cents_to_dollars
+        round(cast((tax_paid / 100) as numeric), 2) as tax_paid,
+        -- Substituição manual do cents_to_dollars
+        round(cast((order_total / 100) as numeric), 2) as order_total,
+
+        ---------- timestamps
+        -- Substituição manual do dbt.date_trunc
+        date_trunc(ordered_at, day) as ordered_at
+
+    from combined_sources
+
+)
+
+select * from renamed;
+
+
+[0m20:13:23.645858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:24.395385 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:f930ef26-e5c1-4037-a79a-416aaeacaa8a&page=queryresults
+[0m20:13:24.892836 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EC3CE30>]}
+[0m20:13:24.893384 [info ] [Thread-1 (]: 5 of 10 OK created sql view model staging.stg_orders ........................... [[32mCREATE VIEW (0 processed)[0m in 1.25s]
+[0m20:13:24.894147 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_orders
+[0m20:13:24.894555 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_orders_macro
+[0m20:13:24.894990 [info ] [Thread-1 (]: 6 of 10 START sql view model staging.stg_orders_macro .......................... [RUN]
+[0m20:13:24.895479 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_orders, now model.datawarehouse.stg_orders_macro)
+[0m20:13:24.895860 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_orders_macro
+[0m20:13:24.903298 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:25.721605 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_orders_macro"
+[0m20:13:25.722658 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_orders_macro
+[0m20:13:25.724908 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_orders_macro"
+[0m20:13:25.725836 [debug] [Thread-1 (]: On model.datawarehouse.stg_orders_macro: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_orders_macro"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_orders_macro`
+  OPTIONS()
+  as with
+
+source as (
+
+    -- Usando a macro dbt_utils.union_relations para combinar as tabelas raw_orders_2016 e raw_orders_2017
+
+
+
+        (
+            select
+                cast('''`dbtbigquery-454400`.`raw`.`raw_orders_2023`''' as string) as _dbt_source_relation,
+
+
+                    cast(`id` as STRING) as `id` ,
+                    cast(`customer` as STRING) as `customer` ,
+                    cast(`ordered_at` as DATETIME) as `ordered_at` ,
+                    cast(`store_id` as STRING) as `store_id` ,
+                    cast(`subtotal` as INT64) as `subtotal` ,
+                    cast(`tax_paid` as INT64) as `tax_paid` ,
+                    cast(`order_total` as INT64) as `order_total`
+
+            from `dbtbigquery-454400`.`raw`.`raw_orders_2023`
+
+
+        )
+
+        union all
+
+
+        (
+            select
+                cast('''`dbtbigquery-454400`.`raw`.`raw_orders_2024`''' as string) as _dbt_source_relation,
+
+
+                    cast(`id` as STRING) as `id` ,
+                    cast(`customer` as STRING) as `customer` ,
+                    cast(`ordered_at` as DATETIME) as `ordered_at` ,
+                    cast(`store_id` as STRING) as `store_id` ,
+                    cast(`subtotal` as INT64) as `subtotal` ,
+                    cast(`tax_paid` as INT64) as `tax_paid` ,
+                    cast(`order_total` as INT64) as `order_total`
+
+            from `dbtbigquery-454400`.`raw`.`raw_orders_2024`
+
+
+        )
+
+
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as order_id,
+        store_id as location_id,
+        customer as customer_id,
+
+        ---------- numerics
+        subtotal as subtotal_cents,
+        tax_paid as tax_paid_cents,
+        order_total as order_total_cents,
+
+    round(cast((subtotal / 100) as numeric), 2)
+ as subtotal,
+
+    round(cast((tax_paid / 100) as numeric), 2)
+ as tax_paid,
+
+    round(cast((order_total / 100) as numeric), 2)
+ as order_total,
+
+        ---------- timestamps
+        timestamp_trunc(
+        cast(ordered_at as timestamp),
+        day
+    ) as ordered_at
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:26.281065 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:b92f9690-75ff-4a9f-85e1-3792fb31a9ec&page=queryresults
+[0m20:13:26.777623 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EC87D70>]}
+[0m20:13:26.778214 [info ] [Thread-1 (]: 6 of 10 OK created sql view model staging.stg_orders_macro ..................... [[32mCREATE VIEW (0 processed)[0m in 1.88s]
+[0m20:13:26.778941 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_orders_macro
+[0m20:13:26.779363 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_products
+[0m20:13:26.779852 [info ] [Thread-1 (]: 7 of 10 START sql view model staging.stg_products .............................. [RUN]
+[0m20:13:26.780379 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_orders_macro, now model.datawarehouse.stg_products)
+[0m20:13:26.780739 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_products
+[0m20:13:26.783136 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_products"
+[0m20:13:26.784041 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_products
+[0m20:13:26.786046 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_products"
+[0m20:13:26.786969 [debug] [Thread-1 (]: On model.datawarehouse.stg_products: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_products"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_products`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_products`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        sku as product_id,
+
+        ---------- text
+        name as product_name,
+        type as product_type,
+        description as product_description,
+
+        ---------- numerics
+        -- Substituição manual do cents_to_dollars
+        round(cast((price / 100) as numeric), 2) as product_price,
+
+        ---------- booleans
+        coalesce(type = 'jaffle', false) as is_food_item,
+        coalesce(type = 'beverage', false) as is_drink_item
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:26.787345 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:27.515205 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:205be168-a218-4bef-9af5-09481eaa3771&page=queryresults
+[0m20:13:27.988739 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EC87FB0>]}
+[0m20:13:27.989282 [info ] [Thread-1 (]: 7 of 10 OK created sql view model staging.stg_products ......................... [[32mCREATE VIEW (0 processed)[0m in 1.21s]
+[0m20:13:27.990179 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_products
+[0m20:13:27.990764 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_products_macro
+[0m20:13:27.991239 [info ] [Thread-1 (]: 8 of 10 START sql view model staging.stg_products_macro ........................ [RUN]
+[0m20:13:27.991725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_products, now model.datawarehouse.stg_products_macro)
+[0m20:13:27.992047 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_products_macro
+[0m20:13:27.994686 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_products_macro"
+[0m20:13:27.995606 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_products_macro
+[0m20:13:27.997455 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_products_macro"
+[0m20:13:27.998280 [debug] [Thread-1 (]: On model.datawarehouse.stg_products_macro: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_products_macro"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_products_macro`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_products`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        sku as product_id,
+
+        ---------- text
+        name as product_name,
+        type as product_type,
+        description as product_description,
+
+
+        ---------- numerics
+
+    round(cast((price / 100) as numeric), 2)
+ as product_price,
+
+        ---------- booleans
+        coalesce(type = 'jaffle', false) as is_food_item,
+
+        coalesce(type = 'beverage', false) as is_drink_item
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:27.998639 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:28.715768 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:b3a167aa-b9da-4da2-92b8-6ae9e0f2b153&page=queryresults
+[0m20:13:29.190598 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EC86ED0>]}
+[0m20:13:29.191153 [info ] [Thread-1 (]: 8 of 10 OK created sql view model staging.stg_products_macro ................... [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m20:13:29.191921 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_products_macro
+[0m20:13:29.192337 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_supplies
+[0m20:13:29.192896 [info ] [Thread-1 (]: 9 of 10 START sql view model staging.stg_supplies .............................. [RUN]
+[0m20:13:29.193487 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_products_macro, now model.datawarehouse.stg_supplies)
+[0m20:13:29.193854 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_supplies
+[0m20:13:29.196243 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_supplies"
+[0m20:13:29.197195 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_supplies
+[0m20:13:29.199039 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_supplies"
+[0m20:13:29.199901 [debug] [Thread-1 (]: On model.datawarehouse.stg_supplies: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_supplies"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_supplies`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_supplies`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        -- Substituição manual do generate_surrogate_key
+        id as supply_id,
+        sku as product_id,
+        name as supply_name,
+
+        ---------- text
+        perishable as is_perishable_supply,
+
+        ---------- numerics
+        -- Substituição manual do cents_to_dollars
+        CONCAT(id, '-', sku) as supply_uuid,
+
+        ---------- booleans
+        ROUND(CAST((cost / 100) as numeric), 2) as supply_cost
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:29.200349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:29.890605 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:7cd1efae-c810-491b-8c51-df7b2b03185d&page=queryresults
+[0m20:13:30.384332 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3ECE0AD0>]}
+[0m20:13:30.384920 [info ] [Thread-1 (]: 9 of 10 OK created sql view model staging.stg_supplies ......................... [[32mCREATE VIEW (0 processed)[0m in 1.19s]
+[0m20:13:30.385587 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_supplies
+[0m20:13:30.385936 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_supplies_macro
+[0m20:13:30.386380 [info ] [Thread-1 (]: 10 of 10 START sql view model staging.stg_supplies_macro ....................... [RUN]
+[0m20:13:30.386898 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.datawarehouse.stg_supplies, now model.datawarehouse.stg_supplies_macro)
+[0m20:13:30.387203 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_supplies_macro
+[0m20:13:30.390293 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_supplies_macro"
+[0m20:13:30.391139 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_supplies_macro
+[0m20:13:30.393491 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_supplies_macro"
+[0m20:13:30.394365 [debug] [Thread-1 (]: On model.datawarehouse.stg_supplies_macro: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_supplies_macro"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_supplies_macro`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_supplies`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        to_hex(md5(cast(coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(sku as string), '_dbt_utils_surrogate_key_null_') as string))) as supply_uuid,
+        id as supply_id,
+        sku as product_id,
+
+        ---------- text
+        name as supply_name,
+
+        ---------- numerics
+
+    round(cast((cost / 100) as numeric), 2)
+ as supply_cost,
+
+        ---------- booleans
+        perishable as is_perishable_supply
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:13:30.394745 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:13:31.032392 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:2033f260-387a-4848-92d8-b259bf960f79&page=queryresults
+[0m20:13:31.491938 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45dd5c95-18c6-430c-b974-57f518d3bb7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3ECE1910>]}
+[0m20:13:31.492490 [info ] [Thread-1 (]: 10 of 10 OK created sql view model staging.stg_supplies_macro .................. [[32mCREATE VIEW (0 processed)[0m in 1.11s]
+[0m20:13:31.493272 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_supplies_macro
+[0m20:13:31.494408 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:13:31.495736 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:13:31.496003 [debug] [MainThread]: Connection 'create_dbtbigquery-454400_staging' was properly closed.
+[0m20:13:31.496238 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_staging' was properly closed.
+[0m20:13:31.496463 [debug] [MainThread]: Connection 'model.datawarehouse.stg_supplies_macro' was properly closed.
+[0m20:13:31.496756 [info ] [MainThread]:
+[0m20:13:31.497214 [info ] [MainThread]: Finished running 10 view models in 0 hours 0 minutes and 17.66 seconds (17.66s).
+[0m20:13:31.499011 [debug] [MainThread]: Command end result
+[0m20:13:31.608371 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:13:31.610104 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:13:31.615151 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m20:13:31.615437 [info ] [MainThread]:
+[0m20:13:31.615963 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:13:31.616473 [info ] [MainThread]:
+[0m20:13:31.617003 [error] [MainThread]:   Database Error in model stg_order_items (models\staging\stg_order_items.sql)
+  Not found: Table dbtbigquery-454400:raw.raw_items was not found in location US
+  compiled code at target\run\datawarehouse\models\staging\stg_order_items.sql
+[0m20:13:31.617504 [info ] [MainThread]:
+[0m20:13:31.617998 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=1 SKIP=0 TOTAL=10
+[0m20:13:31.618705 [debug] [MainThread]: Command `dbt run` failed at 20:13:31.618607 after 23.63 seconds
+[0m20:13:31.619040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3EC07230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF209582F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF3E15FF50>]}
+[0m20:13:31.619372 [debug] [MainThread]: Flushing usage events
+[0m20:13:32.512505 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:15:01.958677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA924B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA7289590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA9F85950>]}
+
+
+============================== 20:15:01.962330 | d174be13-159d-4e53-b567-6503c2fa8358 ==============================
+[0m20:15:01.962330 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:15:01.962978 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt seed --select raw_items', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:15:02.838422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA98E29E0>]}
+[0m20:15:02.889894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC47B0E20>]}
+[0m20:15:02.890518 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:15:03.210378 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:15:03.374972 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m20:15:03.375612 [debug] [MainThread]: Partial parsing: added file: datawarehouse://seeds\raw_items.csv
+[0m20:15:03.551003 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.datawarehouse.mart
+[0m20:15:03.561025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC4B4A450>]}
+[0m20:15:03.630249 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:03.633411 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:03.654012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC4B00C80>]}
+[0m20:15:03.654442 [info ] [MainThread]: Found 10 models, 7 seeds, 7 sources, 738 macros
+[0m20:15:03.654914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC4EBBA10>]}
+[0m20:15:03.656191 [info ] [MainThread]:
+[0m20:15:03.656626 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:15:03.657016 [info ] [MainThread]:
+[0m20:15:03.657502 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:15:03.658385 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m20:15:03.658745 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:04.338958 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_raw'
+[0m20:15:04.339378 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:04.866883 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400_raw, now list_dbtbigquery-454400_staging)
+[0m20:15:04.868046 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:15:05.415804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC47D4600>]}
+[0m20:15:05.416266 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:15:05.420496 [debug] [Thread-1 (]: Began running node seed.datawarehouse.raw_items
+[0m20:15:05.420964 [info ] [Thread-1 (]: 1 of 1 START seed file raw.raw_items ........................................... [RUN]
+[0m20:15:05.421566 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.datawarehouse.raw_items'
+[0m20:15:05.421908 [debug] [Thread-1 (]: Began compiling node seed.datawarehouse.raw_items
+[0m20:15:05.422200 [debug] [Thread-1 (]: Began executing node seed.datawarehouse.raw_items
+[0m20:15:05.500377 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:15:12.611138 [debug] [Thread-1 (]: On seed.datawarehouse.raw_items: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "seed.datawarehouse.raw_items"} */
+
+    alter table `dbtbigquery-454400`.`raw`.`raw_items` set OPTIONS()
+
+[0m20:15:13.103587 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:95e2f93e-c822-45f9-9f4e-b35528937bb8&page=queryresults
+[0m20:15:13.594743 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.datawarehouse.raw_items"
+[0m20:15:13.610666 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd174be13-159d-4e53-b567-6503c2fa8358', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC50162D0>]}
+[0m20:15:13.611267 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file raw.raw_items ....................................... [[32mINSERT 1000[0m in 8.19s]
+[0m20:15:13.612106 [debug] [Thread-1 (]: Finished running node seed.datawarehouse.raw_items
+[0m20:15:13.613216 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:15:13.614522 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:15:13.614786 [debug] [MainThread]: Connection 'list_dbtbigquery-454400' was properly closed.
+[0m20:15:13.615016 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_staging' was properly closed.
+[0m20:15:13.615241 [debug] [MainThread]: Connection 'seed.datawarehouse.raw_items' was properly closed.
+[0m20:15:13.615485 [info ] [MainThread]:
+[0m20:15:13.615919 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 9.96 seconds (9.96s).
+[0m20:15:13.616675 [debug] [MainThread]: Command end result
+[0m20:15:13.643415 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:13.645268 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:13.650151 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m20:15:13.650417 [info ] [MainThread]:
+[0m20:15:13.650953 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:15:13.651423 [info ] [MainThread]:
+[0m20:15:13.651854 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:15:13.652526 [debug] [MainThread]: Command `dbt seed` succeeded at 20:15:13.652432 after 11.83 seconds
+[0m20:15:13.652841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC4CA2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC55972F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC5595EF0>]}
+[0m20:15:13.653143 [debug] [MainThread]: Flushing usage events
+[0m20:15:14.295962 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:15:32.149568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215D757B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215D557D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215D82B5950>]}
+
+
+============================== 20:15:32.153248 | 4f1e6f19-2995-4ad2-b657-078f9449d8aa ==============================
+[0m20:15:32.153248 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:15:32.153903 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select str_order_items', 'send_anonymous_usage_stats': 'True'}
+[0m20:15:33.032969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4f1e6f19-2995-4ad2-b657-078f9449d8aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215D7C129E0>]}
+[0m20:15:33.085626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4f1e6f19-2995-4ad2-b657-078f9449d8aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F2AB0E20>]}
+[0m20:15:33.086319 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:15:33.415973 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:15:33.581097 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:15:33.581455 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:15:33.586582 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.datawarehouse.mart
+[0m20:15:33.616194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4f1e6f19-2995-4ad2-b657-078f9449d8aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F2E4A550>]}
+[0m20:15:33.689001 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:33.692160 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:33.712885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4f1e6f19-2995-4ad2-b657-078f9449d8aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F2E03890>]}
+[0m20:15:33.713319 [info ] [MainThread]: Found 10 models, 7 seeds, 7 sources, 738 macros
+[0m20:15:33.713801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4f1e6f19-2995-4ad2-b657-078f9449d8aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F30DBE70>]}
+[0m20:15:33.714426 [warn ] [MainThread]: The selection criterion 'str_order_items' does not match any enabled nodes
+[0m20:15:33.715457 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m20:15:33.716982 [debug] [MainThread]: Command end result
+[0m20:15:33.742704 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:33.744437 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:33.747096 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m20:15:33.747689 [debug] [MainThread]: Command `dbt run` succeeded at 20:15:33.747593 after 1.70 seconds
+[0m20:15:33.748061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F3103110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215D854FDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215F312E2D0>]}
+[0m20:15:33.748382 [debug] [MainThread]: Flushing usage events
+[0m20:15:34.335819 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:15:46.334123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91149B380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90F4D9590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9121D5950>]}
+
+
+============================== 20:15:46.337863 | 9714517a-c9be-4bbf-999c-fa0d614ebf24 ==============================
+[0m20:15:46.337863 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:15:46.338607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\diogo\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select stg_order_items', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:15:47.213981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B911B329E0>]}
+[0m20:15:47.263199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92C9C0E20>]}
+[0m20:15:47.263774 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:15:47.588139 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m20:15:47.734940 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:15:47.735286 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:15:47.740250 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.datawarehouse.mart
+[0m20:15:47.769791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92CD72550>]}
+[0m20:15:47.841276 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:47.844323 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:47.863401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92CD13890>]}
+[0m20:15:47.863812 [info ] [MainThread]: Found 10 models, 7 seeds, 7 sources, 738 macros
+[0m20:15:47.864307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92CFE7E70>]}
+[0m20:15:47.865657 [info ] [MainThread]:
+[0m20:15:47.866181 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:15:47.866634 [info ] [MainThread]:
+[0m20:15:47.867200 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:15:47.868058 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400'
+[0m20:15:47.868420 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:48.482335 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbtbigquery-454400_raw'
+[0m20:15:48.482799 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:15:49.045923 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbtbigquery-454400_raw, now list_dbtbigquery-454400_staging)
+[0m20:15:49.047214 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:15:49.620154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92D00F110>]}
+[0m20:15:49.620587 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:15:49.624555 [debug] [Thread-1 (]: Began running node model.datawarehouse.stg_order_items
+[0m20:15:49.624975 [info ] [Thread-1 (]: 1 of 1 START sql view model staging.stg_order_items ............................ [RUN]
+[0m20:15:49.625864 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.datawarehouse.stg_order_items'
+[0m20:15:49.626251 [debug] [Thread-1 (]: Began compiling node model.datawarehouse.stg_order_items
+[0m20:15:49.633784 [debug] [Thread-1 (]: Writing injected SQL for node "model.datawarehouse.stg_order_items"
+[0m20:15:49.634947 [debug] [Thread-1 (]: Began executing node model.datawarehouse.stg_order_items
+[0m20:15:49.659944 [debug] [Thread-1 (]: Writing runtime sql for node "model.datawarehouse.stg_order_items"
+[0m20:15:49.660933 [debug] [Thread-1 (]: On model.datawarehouse.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "datawarehouse", "target_name": "dev", "node_id": "model.datawarehouse.stg_order_items"} */
+
+
+  create or replace view `dbtbigquery-454400`.`staging`.`stg_order_items`
+  OPTIONS()
+  as with
+
+source as (
+
+    select * from `dbtbigquery-454400`.`raw`.`raw_items`
+
+),
+
+renamed as (
+
+    select
+
+        ----------  ids
+        id as order_item_id,
+        order_id,
+        sku as product_id
+
+    from source
+
+)
+
+select * from renamed;
+
+
+[0m20:15:49.661310 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:15:50.369883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbtbigquery-454400&j=bq:US:b2c077a2-6e94-49c5-a747-3321ea408eec&page=queryresults
+[0m20:15:50.943830 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9714517a-c9be-4bbf-999c-fa0d614ebf24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92D5D9010>]}
+[0m20:15:50.944419 [info ] [Thread-1 (]: 1 of 1 OK created sql view model staging.stg_order_items ....................... [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m20:15:50.945193 [debug] [Thread-1 (]: Finished running node model.datawarehouse.stg_order_items
+[0m20:15:50.946369 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:15:50.947709 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:15:50.947975 [debug] [MainThread]: Connection 'list_dbtbigquery-454400' was properly closed.
+[0m20:15:50.948208 [debug] [MainThread]: Connection 'list_dbtbigquery-454400_staging' was properly closed.
+[0m20:15:50.948428 [debug] [MainThread]: Connection 'model.datawarehouse.stg_order_items' was properly closed.
+[0m20:15:50.948676 [info ] [MainThread]:
+[0m20:15:50.949092 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.08 seconds (3.08s).
+[0m20:15:50.949883 [debug] [MainThread]: Command end result
+[0m20:15:50.976562 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\manifest.json
+[0m20:15:50.978417 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\semantic_manifest.json
+[0m20:15:50.983058 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\target\run_results.json
+[0m20:15:50.983331 [info ] [MainThread]:
+[0m20:15:50.983853 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:15:50.984263 [info ] [MainThread]:
+[0m20:15:50.984639 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:15:50.985266 [debug] [MainThread]: Command `dbt run` succeeded at 20:15:50.985173 after 4.75 seconds
+[0m20:15:50.985579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92D0E5440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92D67E0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B92D67DB30>]}
+[0m20:15:50.985879 [debug] [MainThread]: Flushing usage events
+[0m20:15:51.565881 [debug] [MainThread]: An error was encountered while trying to flush usage events
