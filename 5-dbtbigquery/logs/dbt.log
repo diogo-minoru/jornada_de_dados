@@ -2132,3 +2132,82 @@ Update your versions in packages.yml, then run dbt deps
 [0m19:56:25.355115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002101524FC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021014D87D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021014FEEA50>]}
 [0m19:56:25.355426 [debug] [MainThread]: Flushing usage events
 [0m19:56:25.907710 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:18.845520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D6A42F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D79EB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D79EB250>]}
+
+
+============================== 18:47:18.849051 | 1ca71a7a-7b09-4427-8832-743515f420c0 ==============================
+[0m18:47:18.849051 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:47:18.849622 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'c:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'c:\\Users\\diogo\\Downloads\\GitHub\\jornada_de_dados\\5-dbtbigquery\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt ', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:18.952525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1ca71a7a-7b09-4427-8832-743515f420c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D708F100>]}
+[0m18:47:19.059698 [debug] [MainThread]: Set downloads directory='C:\Users\diogo\AppData\Local\Temp\dbt-downloads-qva1pyaq'
+[0m18:47:19.060185 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m18:47:19.413973 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m18:47:19.414782 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m18:47:19.483629 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m18:47:19.486909 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m18:47:19.539131 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m18:47:19.539935 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_date` package is deprecated in favor of
+`godatadriven/dbt_date`. Please update your `packages.yml` configuration to use
+`godatadriven/dbt_date` instead.
+[0m18:47:19.540343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1ca71a7a-7b09-4427-8832-743515f420c0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D7DCE9C0>]}
+[0m18:47:19.542119 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m18:47:20.676342 [error] [MainThread]: Encountered an error:
+[WinError 32] O arquivo já está sendo usado por outro processo: 'dbt_packages\\dbt-utils-1.1.1'
+[0m18:47:20.756212 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\Lib\shutil.py", line 856, in move
+    os.rename(src, real_dst)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Acesso negado: 'dbt_packages\\dbt-utils-1.1.1' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\cli\main.py", line 455, in deps
+    results = task.run()
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\task\deps.py", line 254, in run
+    package.install(self.project, renderer)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\deps\registry.py", line 63, in install
+    self._install(project, renderer)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\deps\base.py", line 121, in _install
+    connection_exception_retry(download_untar_fn, 5)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt_common\utils\connection.py", line 21, in connection_exception_retry
+    return fn()
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt\deps\base.py", line 133, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt_common\clients\system.py", line 646, in untar_package
+    dbt_common.clients.system.rename(downloaded_path, desired_path, force=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\diogo\Downloads\GitHub\jornada_de_dados\5-dbtbigquery\.venv\Lib\site-packages\dbt_common\clients\system.py", line 609, in rename
+    shutil.move(from_path, to_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\Lib\shutil.py", line 874, in move
+    rmtree(src)
+    ~~~~~~^^^^^
+  File "C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\diogo\.pyenv\pyenv-win\versions\3.13.2\Lib\shutil.py", line 631, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 32] O arquivo já está sendo usado por outro processo: 'dbt_packages\\dbt-utils-1.1.1'
+
+[0m18:47:20.757076 [debug] [MainThread]: Command `cli deps` failed at 18:47:20.756971 after 2.01 seconds
+[0m18:47:20.757392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D7E49250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D7E49450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186D7DEE5D0>]}
+[0m18:47:20.757722 [debug] [MainThread]: Flushing usage events
+[0m18:47:21.310127 [debug] [MainThread]: An error was encountered while trying to flush usage events
