@@ -61,3 +61,5 @@ O TCL ou Linguagem de Controle de Transação é usado para gerenciar transaçõ
 * **Objetivo**: O TCL é usado para gerenciar transações no banco de dados, garantindo que as operações sejam completadas com sucesso ou revertidas em caso de erro. Isso é essencial para manter a consistência e integridade dos dados, especialmente em ambientes onde múltiplas transações ocorrem simultaneamente.
 
 Essa separação de responsabilidades ajuda a manter a organização e eficiência das operações do banco de dados, além de garantir que as ações executadas em um ambiente de banco de dados sejam seguras e alinhadas com as necessidades da organização.
+
+![SQL](https://assets.dio.me/sc9qapKI_QxsYul-hGd6uCgHLN6b3F8G6tGSxqaQKD0/f:webp/q:80/L2FydGljbGVzL2NvdmVyL2FlMjU3MmMzLTU0ZDUtNDVlOC1iMWI3LWE5MmM5MjEyNzU4ZS5qcGc)
