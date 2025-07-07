@@ -74,3 +74,4 @@ models:
     columns:
       - name: date_day
       - name: prior_date_day
+
