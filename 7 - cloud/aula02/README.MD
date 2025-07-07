@@ -2,9 +2,11 @@
 ### S3: Armazenamento de Dados na AWS
 Objetivo: Explorar as diversas aplicações do Amazon S3 no contexto de engenharia, ciência e análise de dados, com um foco prático em como configurar e utilizar o serviço via script Python usando o boto3. Além disso, abordaremos a criação de um IAM exclusivo e um grupo de recursos para gerenciar acesso e segurança.
 
-## 4. Exemplo de Uso do S3 via Python (boto3)
+## 1. Exemplo de Uso do S3 via Python (boto3)
 
-### 4.1 Instalando o boto3
+![Imagem](https://github.com/diogo-minoru/jornada_de_dados/blob/main/7%20-%20cloud/aula02/imagem.png?raw=true)
+
+### 1.1 Instalando o boto3
 
 1. **Instalação do boto3:**
    - Para interagir com o S3 via Python, é necessário instalar o boto3, o SDK da AWS para Python:
@@ -13,7 +15,7 @@ Objetivo: Explorar as diversas aplicações do Amazon S3 no contexto de engenhar
    pip install boto3
    ```
 
-### 4.2 Configurando Credenciais AWS
+### 1.2 Configurando Credenciais AWS
 
 1. **Configuração das Credenciais:**
    - Antes de utilizar o boto3, é necessário configurar as credenciais da AWS. Isso pode ser feito através do `aws configure` ou definindo variáveis de ambiente.
@@ -36,7 +38,7 @@ Objetivo: Explorar as diversas aplicações do Amazon S3 no contexto de engenhar
    s3 = session.resource('s3')
    ```
 
-### 4.3 Criando e Gerenciando Buckets
+### 1.3 Criando e Gerenciando Buckets
 
 1. **Criando um Bucket:**
    - Use o boto3 para criar um novo bucket S3:
@@ -61,7 +63,7 @@ Objetivo: Explorar as diversas aplicações do Amazon S3 no contexto de engenhar
        print(bucket['Name'])
    ```
 
-### 4.4 Upload e Download de Arquivos
+### 1.4 Upload e Download de Arquivos
 
 1. **Upload de Arquivos:**
    - Carregue um arquivo local para o S3:
@@ -77,7 +79,7 @@ Objetivo: Explorar as diversas aplicações do Amazon S3 no contexto de engenhar
    s3.download_file(bucket_name, 's3-file.txt', 'local-file.txt')
    ```
 
-### 4.5 Configurando ACLs e Políticas de Bucket
+### 1.5 Configurando ACLs e Políticas de Bucket
 
 1. **Definindo Permissões de Acesso:**
    - Use boto3 para definir permissões de leitura/escrita:
