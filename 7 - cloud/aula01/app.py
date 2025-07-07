@@ -7,7 +7,7 @@ import numpy as np
 st.title('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
-DATA_URL = ('https://s3.amazonaws.com/www.bootcampdecloudjornadadedados.com/uber-raw-data-sep14.csv.gz')
+DATA_URL = ('https://bucket159753456.s3.us-east-1.amazonaws.com/data-engineering-roadmap_Bootcamp+-+Cloud+para+dados_Aula_01_uber-raw-data-sep14.csv.gz+at+main+%C2%B7+lvgalvao_data-engineering-roadmap.html')
 
 @st.cache_data
 def load_data(nrows):
